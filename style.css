@@ -1,0 +1,78 @@
+body {
+  background: black;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.blob {
+  width: 80px;
+  height: 80px;
+  background: purple;
+  border-radius: 50%;
+  position: absolute;
+  will-change: transform;
+}
+
+#speech {
+  position: absolute;
+  background: white;
+  color: black;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 200px;
+  font-size: 14px;
+
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* opacity: 0; */
+}
+
+#scrollBox {
+  flex: 1;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 12px;
+  /* opacity: 0; */
+}
+
+#acceptBtn {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: not-allowed;
+  /* opacity: 0; */
+}
+
+#agreement {
+  font-size: 20px;
+  white-space: pre-wrap;
+  text-align: left;
+  /* black text color */
+  color: black;
+}
+
+#agreementTitle {
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+  font-family: cursive;
+}
